@@ -1,63 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirvana Mini App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f3f4f6;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        .emoji {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
-        .balance {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #4CAF50;
-        }
-        .btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            margin-top: 10px;
-        }
-        .btn:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>SmileyPaw Token</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="emoji">😊</div>
-        <div class="balance" id="balance">Your Balance: 0 NIRV</div>
-        <button class="btn" onclick="connectWallet()">Connect Wallet</button>
-        <button class="btn" onclick="claimReward()">Claim Reward</button>
-        <button class="btn" onclick="stakeTokens()">Stake Tokens</button>
-    </div>
+    <header>
+        <div class="logo">
+            <img src="smileypaw-icon.png" alt="SmileyPaw Icon">
+            <h1>SmileyPaw Token</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About SmileyPaw</h2>
+            <p>SmileyPaw is a fun and community-driven token aiming to bring smiles and innovation in the crypto space. Built on the Polygon blockchain, it offers utility in gaming, staking, and more.</p>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/ethers@5.4.6/dist/ethers.min.js"></script>
-    <script src="app.js"></script>
+        <section id="tokenomics">
+            <h2>Tokenomics</h2>
+            <div class="tokenomics-grid">
+                <div>
+                    <h3>Total Supply</h3>
+                    <p>1,000,000,000 SPW</p>
+                </div>
+                <div>
+                    <h3>Community Allocation</h3>
+                    <p>60%</p>
+                </div>
+                <div>
+                    <h3>Team</h3>
+                    <p>20%</p>
+                </div>
+                <div>
+                    <h3>Marketing</h3>
+                    <p>10%</p>
+                </div>
+                <div>
+                    <h3>Liquidity</h3>
+                    <p>10%</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <h2>Roadmap</h2>
+            <ol>
+                <li>Q1 2024: Launch SmileyPaw Token</li>
+                <li>Q2 2024: Integration with NFT Marketplace</li>
+                <li>Q3 2024: SmileyPaw Game Release</li>
+                <li>Q4 2024: Partnership with DeFi Projects</li>
+            </ol>
+        </section>
+
+        <section id="community">
+            <h2>Join Our Community</h2>
+            <p>Stay connected and be part of our growing SmileyPaw family!</p>
+            <div class="social-links">
+                <a href="https://twitter.com">Twitter</a>
+                <a href="https://t.me">Telegram</a>
+                <a href="https://discord.com">Discord</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SmileyPaw. All rights reserved.</p>
+    </footer>
 </body>
 </html>
